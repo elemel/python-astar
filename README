@@ -1,1 +1,13 @@
 A* search algorithm implemented in Python.
+
+The search module runs on Python 3 and has no third-party dependencies.
+Add src to your Python import path to import astar.
+
+Run the regression tests from the repository root:
+
+    python -m unittest discover -s tests -v
+
+The interactive demo requires curses and a terminal with at least 24 rows
+and 79 columns. On Linux or macOS, run:
+
+    python src/astar_demo.py

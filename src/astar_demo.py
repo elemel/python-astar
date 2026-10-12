@@ -259,7 +259,7 @@ def handle_command(key, engine):
 def main(stdscr):
     if COLOR:
         curses.use_default_colors()
-        for i in xrange(curses.COLOR_RED, curses.COLOR_WHITE + 1):
+        for i in range(curses.COLOR_RED, curses.COLOR_WHITE + 1):
             curses.init_pair(i, i, -1)
     grid = parse_grid(DUNGEON, WIDTH, HEIGHT)
     engine = Engine(grid)
